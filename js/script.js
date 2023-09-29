@@ -24,7 +24,8 @@ createApp({
       newTask : {
         text:'',
         doneTask: false
-      }
+      },
+      isError : false
       
       
     }
@@ -33,11 +34,23 @@ createApp({
   
   methods : {
     addTask(){
-      this.task.unshift({...this.newTask});
-      this.newTask.text = '';
-      console.log(this.task);
+      if(this.newTask.text.length < 5){
+        this.isError = true
+        this.timer = setInterval(() =>{
+          clearInterval(this.timer)
+          this.isError = false
+      },3000)
+      }else{
+        this.isError = false
+        this.task.unshift({...this.newTask});
+        this.newTask.text = '';
+      }
     },
     removeTask(index){
+      if (this.doneTask === true){
+        console.log(this.task);
+
+      }
       this.task.splice(index,1)
     }
   }
