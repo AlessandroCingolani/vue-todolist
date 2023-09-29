@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
 
 .container {
   margin: 0 auto;
@@ -11,10 +14,58 @@
 }
 
 .logo {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 300px;
 }
 
 .logo img {
   width: 100%;
+}
+
+.add-task-input {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.add-task-input input, .add-task-input button {
+  padding: 10px;
+  border-radius: 10px ;
+  border: 1px solid rgba(128, 128, 128, 0.426);
+}
+
+.add-task-input input {
+  width: 350px;
+  margin-right: 10px;
+}
+
+.task-todo-block {
+  background-color: rgb(245, 247, 246);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.task-todo-block ul li i {
+  float: right;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.task-todo-block ul li {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.381);
+
+}
+
+.task-todo-block ul li span {
+  cursor: pointer;
+}
+
+.task-todo-block ul li i:hover {
+  color: red;
+}
+
+.task-todo-block ul li:hover {
+  background-color: white;
 }
