@@ -6,12 +6,12 @@ createApp({
 
       task : [
         {
-          text:'Comprare la pizza',
-          doneTask : false
+          text:'Fare la spesa',
+          doneTask : true
         },
 
         {
-          text:'Comprare latte',
+          text:'Pagare Assicurazione',
           doneTask : false
         },
 
@@ -33,7 +33,7 @@ createApp({
   
   methods : {
     addTask(){
-      this.task.unshift(this.newTask);
+      this.task.unshift({...this.newTask});
       this.newTask.text = '';
       console.log(this.task);
     },
