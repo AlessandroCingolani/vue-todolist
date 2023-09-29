@@ -26,15 +26,10 @@
 
     <div class="task-todo-block">
       <ul>
-        <li>
-          <span>a</span>
+        <li v-for="(toDo,index) in task">
+          <span>{{toDo.text}}</span>
           <i class="fa-solid fa-trash-can"></i>
-        </li>
-        <li>
-          <span>a</span>
-          <i class="fa-solid fa-trash-can"></i>
-        </li>
-      
+        </li>    
       </ul>
     </div>
 
