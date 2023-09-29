@@ -36,6 +36,9 @@ createApp({
       this.task.unshift(this.newTask);
       this.newTask.text = '';
       console.log(this.task);
+    },
+    removeTask(index){
+      this.task.splice(index,1)
     }
   }
 
