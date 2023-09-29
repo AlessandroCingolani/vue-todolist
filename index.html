@@ -27,6 +27,7 @@
       
 
       <button @click="addTask">Add task</button>
+      <p v-if="isError" class="errorMessage">Enter at least 5 characters!</p>
 
     </div>
 
