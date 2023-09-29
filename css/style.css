@@ -55,7 +55,8 @@ ul {
   height: 40px;
   line-height: 40px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.381);
-
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .task-todo-block ul li span {
