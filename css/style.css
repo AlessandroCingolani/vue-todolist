@@ -73,3 +73,7 @@ ul {
 .done {
   text-decoration: line-through;
 }
+
+.errorMessage {
+  color: red;
+}
