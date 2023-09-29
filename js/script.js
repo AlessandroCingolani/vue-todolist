@@ -33,10 +33,10 @@ createApp({
   methods : {
     addTask(){
       if(this.newTask.text.length < 5){
-        this.isError = true
+        this.isError = true;
         this.timer = setInterval(() =>{
-          clearInterval(this.timer)
-          this.isError = false
+          clearInterval(this.timer);
+          this.isError = false;
       },3000)
       }else{
         this.isError = false
@@ -46,9 +46,9 @@ createApp({
     },
     removeTask(index){
       if (this.task[index].doneTask === true){
-        this.task.splice(index,1)
+        this.task.splice(index,1);
       }else{
-        alert('You must select the activity as carried out to delete it')
+        alert('You must select the activity as carried out to delete it');
       }
     }
   }
