@@ -18,9 +18,15 @@
 
     <div class="add-task-input">
 
-      <input type="text" placeholder="Enter new task">
+      <input 
+      v-model.trim="newTask.text"
+      type="text" 
+      placeholder="Enter new task"
+      @keyup.enter="addTask"
+      >
+      
 
-      <button>Add task</button>
+      <button @click="addTask">Add task</button>
 
     </div>
 
