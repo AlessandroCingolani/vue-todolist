@@ -25,9 +25,7 @@ createApp({
         text:'',
         doneTask: false
       },
-      isError : false
-      
-      
+      isError : false,   
     }
   },
 
@@ -47,11 +45,11 @@ createApp({
       }
     },
     removeTask(index){
-      if (this.doneTask === true){
-        console.log(this.task);
-
+      if (this.task[index].doneTask === true){
+        this.task.splice(index,1)
+      }else{
+        alert('You must select the activity as carried out to delete it')
       }
-      this.task.splice(index,1)
     }
   }
 
