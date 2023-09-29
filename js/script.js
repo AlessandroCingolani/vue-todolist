@@ -35,6 +35,7 @@ createApp({
     addTask(){
       this.task.unshift(this.newTask);
       this.newTask.text = '';
+      console.log(this.task);
     }
   }
 
