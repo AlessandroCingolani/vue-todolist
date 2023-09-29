@@ -69,3 +69,7 @@ ul {
 .task-todo-block ul li:hover {
   background-color: white;
 }
+
+.done {
+  text-decoration: line-through;
+}
