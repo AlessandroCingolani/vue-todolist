@@ -48,7 +48,7 @@ createApp({
       if (this.task[index].doneTask === true){
         this.task.splice(index,1);
       }else{
-        alert('You must select the activity as carried out to delete it');
+        alert('You have to finish the activity as a turn to cancel it!');
       }
     }
   }
