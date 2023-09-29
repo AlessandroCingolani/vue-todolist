@@ -25,12 +25,13 @@
     </div>
 
     <div class="task-todo-block">
-      <ul>
+      <ul v-if="task.length > 0">
         <li v-for="(toDo,index) in task">
           <span>{{toDo.text}}</span>
           <i class="fa-solid fa-trash-can"></i>
         </li>    
       </ul>
+      <h3 v-else>No task to display</h3>
     </div>
 
   </div>
